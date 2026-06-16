@@ -314,7 +314,7 @@
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">
           Wie bist du<br>momentan versichert?
         </h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Dein aktueller Status ist die Basis der Analyse.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Dein aktueller Status ist die Basis der Analyse.</p>
         <div class="space-y-3">
 <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q1','gkv',this)">
   <div class="choice-radio"></div>
@@ -350,7 +350,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Was ist dein<br>beruflicher Status?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Bestimmt Tarife und Beihilfesätze.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Bestimmt Tarife und Beihilfesätze.</p>
         <div class="space-y-3">
 <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q2','anwaerter',this)">
   <div class="choice-radio"></div>
@@ -407,7 +407,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Wie hoch ist dein<br>Jahreseinkommen?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Grobe Einschätzung reicht — beeinflusst mögliche Tarife.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Grobe Einschätzung reicht — beeinflusst mögliche Tarife.</p>
         <div class="space-y-3">
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q3','u25',this)"><div class="choice-radio"></div><div class="font-display text-lg">Unter 25.000 € / Jahr</div></div>
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q3','25-40',this)"><div class="choice-radio"></div><div class="font-display text-lg">25.000 – 40.000 € / Jahr</div></div>
@@ -429,7 +429,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Wann wurdest<br>du geboren?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Dein Alter beeinflusst den Beitrag direkt — jedes Jahr zählt.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Dein Alter beeinflusst den Beitrag direkt — jedes Jahr zählt.</p>
         <select class="bh-select mb-6" id="q4-select" onchange="answers['q4']=this.value; checkQ4();">
           <option value="">Geburtsjahr wählen …</option>
         </select>
@@ -451,7 +451,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Was ist dein<br>Geschlecht?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Relevant für die Tarifberechnung nach EU-Richtlinien.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Relevant für die Tarifberechnung nach EU-Richtlinien.</p>
         <div class="space-y-3">
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q5','m',this)"><div class="choice-radio"></div><div class="font-display text-lg">Männlich</div></div>
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q5','w',this)"><div class="choice-radio"></div><div class="font-display text-lg">Weiblich</div></div>
@@ -484,7 +484,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Welche Leistungen<br>sind dir wichtig?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Mehrfachauswahl möglich.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Mehrfachauswahl möglich.</p>
         <div class="flex flex-wrap gap-2 mb-8">
           <button class="chip-sel px-5 py-2.5 rounded-full text-sm font-medium text-[#030039] transition-all" onclick="toggleChip('q6','einbett',this)">🏥 Einbettzimmer</button>
           <button class="chip-sel px-5 py-2.5 rounded-full text-sm font-medium text-[#030039] transition-all" onclick="toggleChip('q6','chefarzt',this)">👨‍⚕️ Chefarzt</button>
@@ -513,7 +513,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Wie wichtig ist die<br>Beitragsrückerstattung?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Du bekommst Beiträge zurück, wenn du keine Leistungen nutzt.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Du bekommst Beiträge zurück, wenn du keine Leistungen nutzt.</p>
         <div class="space-y-3">
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q7','sehr',this)">
             <div class="choice-radio"></div>
@@ -542,7 +542,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Was ist dir im Alter<br>am wichtigsten?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Ab der Rente verändern sich Prioritäten — wir berücksichtigen das heute.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Ab der Rente verändern sich Prioritäten — wir berücksichtigen das heute.</p>
         <div class="space-y-3">
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q8','leistung',this)">
             <div class="choice-radio"></div>
@@ -575,7 +575,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Wer soll versichert<br>werden?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Für Kinder von Beamten gibt es besonders günstige Tarife.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Für Kinder von Beamten gibt es besonders günstige Tarife.</p>
         <div class="space-y-3">
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q9','nur-ich',this)"><div class="choice-radio"></div><div class="font-display text-lg">Nur ich</div></div>
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q9','partner',this)"><div class="choice-radio"></div><div><div class="font-display text-lg">Ich + Partner / Partnerin</div></div></div>
@@ -609,7 +609,7 @@
           <button onclick="goBack()" class="text-xs text-[#030039]/40 hover:text-[#030039] transition font-medium">← Zurück</button>
         </div>
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Hast du die deutsche<br>Staatsbürgerschaft?</h2>
-        <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Für bestimmte Tarife und Beihilfeansprüche relevant.</p>
+        <p class="text-[#030039]/90 font-normal mb-8 leading-relaxed">Für bestimmte Tarife und Beihilfeansprüche relevant.</p>
         <div class="space-y-3">
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q10','ja',this)"><div class="choice-radio"></div><div class="font-display text-lg">Ja, deutsche Staatsbürgerschaft</div></div>
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q10','eu',this)"><div class="choice-radio"></div><div><div class="font-display text-lg">Nein — EU-Staatsbürger</div><div class="text-sm text-[#030039]/65 font-light">Wohnhaft in Deutschland</div></div></div>
@@ -722,7 +722,7 @@
         <h2 class="font-display text-5xl md:text-7xl leading-[.92] tracking-[-0.03em] text-[#030039] mb-6">
           Analyse auf<br><span class="italic font-medium" style="color:#2200c8;">dem Weg!</span>
         </h2>
-        <p class="text-[#030039]/75 font-light text-base leading-relaxed mb-10 max-w-md mx-auto">
+        <p class="text-[#030039]/90 font-normal text-base leading-relaxed mb-10 max-w-md mx-auto">
           Unser Team meldet sich innerhalb von <strong class="text-[#030039]">24 Stunden</strong> mit deiner persönlichen PKV-Auswertung — meist deutlich schneller.
         </p>
 
