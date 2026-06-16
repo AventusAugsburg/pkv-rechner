@@ -83,19 +83,23 @@
       animation:screenIn .45s cubic-bezier(.2,.8,.2,1) forwards;
     }
 
-    /* ── Choice card ── */
+/* ── Choice card ── */
     .choice-card {
       cursor:pointer; transition:all .3s cubic-bezier(.2,.8,.2,1);
-      border:1.5px solid rgba(3,0,57,.08);
+      /* Stärkerer, sichtbarer Kontrast zum Hintergrund im Standardzustand */
+      border: 1.5px solid rgba(3, 0, 57, 0.16); 
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(3, 0, 57, 0.03);
     }
     .choice-card:hover {
-      border-color:rgba(3,0,57,.25);
+      border-color: #2200c8; /* Signalisiert Interaktion klarer durch das primäre Blau */
       transform:translateY(-2px);
-      box-shadow:0 8px 24px rgba(3,0,57,.08);
+      box-shadow:0 8px 24px rgba(3,0,57,0.08);
     }
     .choice-card.selected {
       border-color:#030039 !important;
-      background:rgba(3,0,57,.03) !important;
+      /* Leicht dunklerer Hintergrund bei Selektion für maximale Abgrenzung */
+      background:rgba(3,0,57,0.05) !important; 
       box-shadow:0 0 0 2px #030039;
     }
     .choice-radio {
@@ -312,10 +316,13 @@
         </h2>
         <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Dein aktueller Status ist die Basis der Analyse.</p>
         <div class="space-y-3">
-          <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q1','gkv',this)">
-            <div class="choice-radio"></div>
-            <div><div class="font-display text-lg text-[#030039]">Gesetzlich (GKV)</div><div class="text-sm text-[#030039]/65 font-light">z. B. AOK, TK, Barmer</div></div>
-          </div>
+<div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q1','gkv',this)">
+  <div class="choice-radio"></div>
+  <div>
+    <div class="font-display text-lg font-semibold text-[#030039]">Gesetzlich (GKV)</div>
+    <div class="text-sm text-[#030039]/85 font-normal mt-0.5">z. B. AOK, TK, Barmer</div>
+  </div>
+</div>
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q1','pkv',this)">
             <div class="choice-radio"></div>
             <div><div class="font-display text-lg text-[#030039]">Privat (PKV)</div><div class="text-sm text-[#030039]/65 font-light">Bereits privat versichert</div></div>
@@ -345,10 +352,13 @@
         <h2 class="font-display text-3xl md:text-5xl tracking-[-0.03em] leading-[.95] text-[#030039] mb-3">Was ist dein<br>beruflicher Status?</h2>
         <p class="text-[#030039]/75 font-light mb-8 leading-relaxed">Bestimmt Tarife und Beihilfesätze.</p>
         <div class="space-y-3">
-          <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q2','anwaerter',this)">
-            <div class="choice-radio"></div>
-            <div><div class="font-display text-lg">Beamtenanwärter / Referendar</div><div class="text-sm text-[#030039]/65 font-light">Noch in der Ausbildungsphase</div></div>
-          </div>
+<div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q2','anwaerter',this)">
+  <div class="choice-radio"></div>
+  <div>
+    <div class="font-display text-lg font-semibold text-[#030039]">Beamtenanwärter / Referendar</div>
+    <div class="text-sm text-[#030039]/85 font-normal mt-0.5">Noch in der Ausbildungsphase</div>
+  </div>
+</div>
           <div class="choice-card bg-white rounded-2xl p-5 flex items-center gap-4" onclick="pick('q2','probe',this)">
             <div class="choice-radio"></div>
             <div><div class="font-display text-lg">Beamter auf Probe</div><div class="text-sm text-[#030039]/65 font-light">Ernannt, noch nicht auf Lebenszeit</div></div>
